@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_row_selector"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_resto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="TEST"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/name_resto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="NAME RESTO"
+        />
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Rating -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost for two  : "
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="1dp"
+        android:textSize="16sp"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/cost_for_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="150dp"
+        android:textSize="16sp"
+        android:text="PRICE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" MYR"
+        android:layout_toRightOf="@+id/cost_for_two"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
+    </RelativeLayout>
+
+    <!-- Genre -->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address          :"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/street_resto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/genre"
+        android:textSize="16sp"
+        android:text="Street"/>
+    <TextView
+        android:id="@+id/state_resto"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/street_resto"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/genre"
+        android:textSize="16sp"
+        android:text="State"/>
+    <TextView
+        android:id="@+id/city_resto"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/state_resto"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/genre"
+        android:textSize="16sp"
+        android:text="City"/>
+    <TextView
+        android:id="@+id/postal_code_resto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_resto"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/genre"
+        android:textSize="16sp"
+        android:text="Postal Code"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description     :"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/desk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/genre"
+        android:text="Description"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating             :"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/avg_rating_resto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/genre"
+            android:text="Rating" />
+
+        <!--<Button
+            android:id="@+id/btnRateresto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@color/bg_login"
+            android:text="Rate Now!"
+            android:layout_below="@id/avg_rating_resto"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>
